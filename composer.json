@@ -1,25 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description for free-id/core package",
+    "name": "free-id/sqlite",
+    "description": "SQLite parser for free-id/core package",
     "keywords": [
         "free id",
-        ":author_username",
-        ":vendor_slug",
-        ":package_slug",
+        "vitkuz573",
+        "free-id",
+        "sqlite",
         "parser"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/free-id/sqlite",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Vitaly Kuzyaev",
+            "email": "vitkuz573@gmail.com",
+            "homepage": "https://vitkuz.ru",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=8.1",
-        "free-id/core": "^4.0"
+        "free-id/core": "^4.0",
+        "ext-pdo": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.8",
@@ -28,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "FreeId\\Sqlite\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "FreeId\\Sqlite\\Tests\\": "tests"
         }
     },
     "scripts": {
